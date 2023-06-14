@@ -1,0 +1,7 @@
+---
+- name: Info
+  hosts: all
+  become: false
+  tasks:
+    - name: Read integrated registry information
+      redhat.openshift.openshift_registry_info:
